@@ -1,0 +1,60 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+
+<body>
+    <h1>Student Information Form</h1>
+    <form action="submit.php" method="post">
+        <!-- Challenge 1: Use the text input to get the user name -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <!-- Challenge 2: Use label in appropriate places -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <!-- Challenge 3: Use different form input elements -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+
+        <label for="course">Course:</label>
+        <input type="radio" id="course_cs" name="course" value="Computer Science" required>
+        <label for="course_cs">Computer Science</label>
+        <input type="radio" id="course_eng" name="course" value="Engineering" required>
+        <label for="course_eng">Engineering</label>
+        <input type="radio" id="course_art" name="course" value="Art" required>
+        <label for="course_art">Art</label>
+        <br>
+
+        <!-- Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section. -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
